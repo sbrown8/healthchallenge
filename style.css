@@ -1,0 +1,40 @@
+/*
+Theme Name: Square Child Theme
+Theme URI: http://shannonbrown.ca
+Description: This is a custom child theme I have created.
+Author: Shannon Brown
+Author URI: http://shannonbrown.ca
+Template: square
+Version: 0.1
+*/
+
+@import url("../square/style.css");
+
+table.hc_results { 
+color: #333;
+width: 640px; 
+border-collapse: 
+collapse; border-spacing: 0; 
+}
+
+table.hc_results td, th { 
+border: 1px solid transparent; /* No more visible border */
+height: 30px; 
+transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+table.hc_results th {
+background: #5bc2ce;  /* Same as underline for square theme */
+font-weight: bold;
+}
+
+table.hc_results td {
+background: #FAFAFA;
+text-align: center;
+}
+
+/* Cells in even rows (2,4,6...) are one color */ 
+table.hc_results tr:nth-child(even) td { background: #F1F1F1; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
+table.hc_results tr:nth-child(odd) td { background: #FEFEFE; }  
